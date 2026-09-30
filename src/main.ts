@@ -18,9 +18,15 @@ document.body.innerHTML = `
 
 // Add click handler
 const button = document.getElementById("increment")!;
-const counterElement = document.getElementById("counter")!;
+const counterElement = document.getElementById("counter")!; // reference to the counter display element
 
 button.addEventListener("click", () => {
   // This looks like to a good place to add some logic!
+  //change button to print text and change color of the button
+  button.textContent = "Clicked!";
+  button.style.backgroundColor = "blue"; //change background of button to blue
+  counter++;
+  counterElement.textContent = counter.toString(); // update the counter display
+
   console.log("I have these thingies:", button, counterElement, counter);
 });
