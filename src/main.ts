@@ -12,13 +12,13 @@ let counter: number = 0;
 // Create basic HTML structure
 document.body.innerHTML = `
   <h1>CMPM 121 Project</h1>
-  <p>Counter: <span id="counter">0</span></p>
+  <p>Counter: <span id="counter">0</span></p> 
   <button id="increment">Click Me!</button>
 `;
 
 // Add click handler
 const button = document.getElementById("increment")!;
-const counterElement = document.getElementById("counter")!;
+const counterElement = document.getElementById("counter")!; // reference to the counter display element
 
 button.addEventListener("click", () => {
   //change button to print text and change color of the button
